@@ -64,7 +64,7 @@ def predict(image):
 
 
 # Load the model
-interpreter = tf.lite.Interpreter(model_path="Analog_Gauge_Images_Reader-main\gate-classificationV3.tflite")
+interpreter = tf.lite.Interpreter(model_path="gate-classificationV3.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
